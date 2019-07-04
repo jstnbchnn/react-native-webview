@@ -350,6 +350,11 @@ public class RNCWebViewManager extends SimpleViewManager<WebView> {
     view.getSettings().setMediaPlaybackRequiresUserGesture(requires);
   }
 
+  @ReactProp(name = "allowFileAccessFromFileUrls")
+  public void setAllowFileAccessFromFileUrls(WebView view, boolean allow) {
+    view.getSettings().setAllowFileAccessFromFileURLs(allow);
+  }
+
   @ReactProp(name = "allowUniversalAccessFromFileURLs")
   public void setAllowUniversalAccessFromFileURLs(WebView view, boolean allow) {
     view.getSettings().setAllowUniversalAccessFromFileURLs(allow);
