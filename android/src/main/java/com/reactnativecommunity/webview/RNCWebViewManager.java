@@ -311,7 +311,7 @@ public class RNCWebViewManager extends SimpleViewManager<WebView> {
 
   @ReactProp(name = "allowFileAccessFromFileUrls")
   public void setAllowFileAccessFromFileUrls(WebView view, boolean allow) {
-    view.getSettings().setAllowFileAccessFromFileURLs(allow)
+    view.getSettings().setAllowFileAccessFromFileURLs(allow);
   }
 
   @ReactProp(name = "allowUniversalAccessFromFileURLs")
